@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.HashMap;
 
 public class Course implements Comparable<Course>, Serializable {
+    private static final long serialVersionUID = 1L;
 
     public Course(String i, String c, String g, String l, String lo, String s, String e, String t) {
         id = i;
