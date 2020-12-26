@@ -1,8 +1,21 @@
 package timetable.dto;
 
+import java.io.Serializable;
 import java.util.HashMap;
 
-public class Course implements Comparable<Course> {
+public class Course implements Comparable<Course>, Serializable {
+
+    public Course(String i, String c, String g, String l, String lo, String s, String e, String t) {
+        id = i;
+        code = c;
+        groups = g;
+        lecturerCode = l;
+        location = lo;
+        start = s;
+        end = e;
+        types = t;
+    }
+
     private String id, code, groups, lecturerCode, location, start, end, types;
 
     public String getID() {
